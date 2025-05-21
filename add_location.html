@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <title>Add Location</title>
+</head>
+<body>
+    <div class="side-menu">
+        <div class="brand-name">
+            <h1>TrackIT</h1>
+        </div>
+        <ul>
+            <li><a href="dashboard.php">Dashboard</a></li>
+            <li><a href="devices.html">Devices</a></li>
+            <li><a href="locations.html">Schools</a></li>
+            <li><a href="users.php">Users</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="header">
+            <div class="nav">
+                <a href="logout.php" class="logout">
+                    <button type="button">Logout</button>
+                </a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="cards">
+                <div class="add-device">
+                    <h1>Add Location</h1>
+                    <form action="add_location_db_config.php" method="post">
+
+                    <label for="location_name">Institution Name:</label>
+                        <input type="text" name="location_name" placeholder="Enter text here" required>
+                        <br><br>
+
+                        <label for="district">District:</label>
+                        <select name="district">
+                            <option value="belize">Belize</option>
+                            <option value="cayo">Cayo</option>
+                            <option value="corozal">Corozal</option>
+                            <option value="orange _walk">Orange Walk</option>
+                            <option value="stann_creek">Stann Creek</option>
+                            <option value="toledo">Toledo</option>
+                        </select>
+                        <br><br>
+
+                        <label for="address">Address:</label>
+                            <input type="text" name="address" placeholder="Enter text here" required>
+                            <br><br>
+                
+                        <label for="pic">Person in Charge:</label>
+                            <input type="text" name="pic" placeholder="Enter name here" required>
+                            <br><br>
+
+                        <label for="phone_number">Phone Number:</label>
+                            <input type="text" name="phone_number" placeholder="Enter number here" required>
+                            <br><br>
+
+                        <label for="email">Email:</label>
+                            <input type="text" name="email" placeholder="Enter email here" required>
+                            <br><br>
+                        
+                        <label for="Status">Status:</label>
+                        <select name="Status">
+                            <option value="active">Active</option>
+                            <option value="inactive">Inactive</option>
+                            <option value="maintenance">Maintenance</option>
+                        </select>
+                        <br><br>
+
+                        <label for="total_systems">Number of Systems:</label>
+                            <input type="text" name="total_systems" placeholder="Enter number here" required>
+                            <br><br>
+
+                    <label for="Notes">Notes:</label>
+                        <textarea name="Notes" placeholder="Enter notes here"></textarea>
+                        <br><br>
+
+                    <button type="submit" class="submit-btn">Add Location</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+</body>
+</html>                        
+</body>
+</html>

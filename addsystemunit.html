@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <title>Add System Unit</title>
+</head>
+<body>
+    <div class="side-menu">
+        <div class="brand-name">
+            <h1>TrackIT</h1>
+        </div>
+        <ul>
+            <li><a href="dashboard.php">Dashboard</a></li>
+            <li><a href="devices.html">Devices</a></li>
+            <li><a href="locations.html">Schools</a></li>
+            <li><a href="users.php">Users</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="header">
+            <div class="nav">
+                <a href="logout.php" class="logout">
+                    <button type="button">Logout</button>
+                </a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="cards">
+                <div class="add-device">
+                    <h1>Add System Unit</h1>
+                    <form action="su_db_config.php" method="post">
+                        <label for="CPU">CPU:</label>
+                        <input type="text" name="CPU" placeholder="Enter text here" required>
+                        <br><br>
+                
+                        <label for="RAM">RAM:</label>
+                        <input type="text" name="RAM" placeholder="Enter text here" required>
+                        <br><br>
+                
+                        <label for="Storage">Storage:</label>
+                        <input type="text" name="Storage" placeholder="Enter text here" required>
+                        <br><br>
+                
+                        <label for="GPU">GPU:</label>
+                        <input type="text" name="GPU" placeholder="Enter text here" required>
+                        <br><br>
+                
+                        <label for="Motherboard">Motherboard:</label>
+                        <input type="text" name="Motherboard" placeholder="Enter text here" required>
+                        <br><br>
+                
+                        <label for="FormFactor">Form Factor:</label>
+                        <select name="FormFactor">
+                            <option value="ATX">ATX</option>
+                            <option value="Mini-ATX">Mini-ATX</option>
+                            <option value="Micro-ATX">Micro-ATX</option>
+                            <option value="ITX">ITX</option>
+                            <option value="Mini-ITX">Mini-ITX</option>
+                            <option value="AT">AT</option>
+                            <option value="BTX">BTX</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        <br><br>
+                
+                        <label for="PSU">Power Supply:</label>
+                        <input type="text" name="PSU" placeholder="Enter text here" required>
+                        <br><br>
+                
+                        <label for="Tower">Tower:</label>
+                        <input type="text" name="Tower" placeholder="Enter text here" required>
+                        <br><br>
+                
+                        <label for="OD">Operating System:</label>
+                        <input type="text" name="OS" placeholder="Enter text here" required>
+                        <br><br>
+                
+                        <label for="Status">Status:</label>
+                        <select name="Status">
+                            <option value="active">Active</option>
+                            <option value="inactive">Inactive</option>
+                            <option value="maintenance">Maintenance</option>
+                        </select>
+                        <br><br>
+                
+                        <label for="Location">Location:</label>
+                        <select name="Location">
+                            <option value="school1">school1</option>
+                            <option value="school2">school2</option>
+                            <option value="school3">school3</option>
+                            <option value="school4">school4</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <br><br>
+                
+                        <label for="notes">Notes:</label>
+                        <textarea name="Notes" placeholder="Enter notes here"></textarea>
+                        <br><br>
+                
+                        <button type="submit">Add Device</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+</body>
+</html>                        
+</body>
+</html>
